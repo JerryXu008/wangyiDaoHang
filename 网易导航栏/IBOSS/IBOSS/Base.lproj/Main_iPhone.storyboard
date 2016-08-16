@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="E5R-Xt-c2X">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Cusotmer NavVC - 客户管理-->
+        <scene sceneID="z3Z-Dv-Jtz">
+            <objects>
+                <viewController id="Xwe-DJ-c8v" customClass="CusotmerNavVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YOi-Au-VAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCr-c5-vus"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OAv-7E-dIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="客户管理" id="elm-ak-TNx"/>
+                    <connections>
+                        <segue destination="zDX-vy-1DJ" kind="push" id="lOi-eN-Kna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20b-Xe-UpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="-622"/>
+        </scene>
+        <!--Customer ManagerVC-->
+        <scene sceneID="3ss-CM-1Wa">
+            <objects>
+                <viewController id="zDX-vy-1DJ" customClass="CustomerManagerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beB-61-lbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="EWZ-uJ-zXY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BYg-u5-kJp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Qnn-Z3-93q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="caE-4T-TJz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgA-Id-Gcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-644"/>
+        </scene>
+        <!--Main TabVC-->
+        <scene sceneID="E6f-4R-ovI">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="E5R-Xt-c2X" customClass="MainTabVC" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LJF-vD-4OP">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xuu-rQ-JoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="-496"/>
+        </scene>
+        <!--Work Flow NavVC - 工作审批-->
+        <scene sceneID="xrR-BZ-jsR">
+            <objects>
+                <viewController id="Qeu-NW-EGd" customClass="WorkFlowNavVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ie-mm-TAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="22u-PX-NnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qpl-pE-E3J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="工作审批" id="Ne1-wD-qSf"/>
+                    <connections>
+                        <segue destination="QiM-Dz-UqC" kind="push" id="17t-VT-5BL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkL-R1-xwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="97"/>
+        </scene>
+        <!--Work FlowVC-->
+        <scene sceneID="yaK-U2-ki0">
+            <objects>
+                <viewController id="QiM-Dz-UqC" customClass="WorkFlowVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IMw-PV-C2e"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBz-Nd-UZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ty9-xD-XRD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="fdsfds" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0r-2w-Aao">
+                                <rect key="frame" x="112" y="282" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4TV-WG-D3t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ah-YE-dRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="192"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
